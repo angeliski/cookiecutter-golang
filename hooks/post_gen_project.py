@@ -126,6 +126,9 @@ else:
 
 # 7. Initialize Git (should be run after all file have been modified or deleted)
 if '{{ cookiecutter.use_git }}'.lower() == 'y':
-    init_git()
+    # init_git()
+     """
+    Initialises git on the new project folder
+    """
 else:
     remove_file(".gitignore")
