@@ -26,6 +26,8 @@ def init_git():
     Initialises git on the new project folder
     """
     GIT_COMMANDS = [
+        ["git", "config", "--global", "user.email", "angeliski@hotmail.com"],
+        ["git", "config", "--global", "user.name", "Rogerio Angeliski"],
         ["git", "init"],
         ["git", "add", "."],
         ["git", "commit", "-a", "-m", "Initial Commit."]
